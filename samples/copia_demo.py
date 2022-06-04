@@ -6,7 +6,7 @@
 import os
 #os.chdir('/content/drive/MyDrive/Colab Notebooks/Mask_RCNN/samples')
 #os.chdir('C:/My Proyects/Mask_RCNN/Mask_RCNN/samples')
-os.chdir('/home/pieropr/Mask_RCNN_TF2/samples')
+os.chdir('/home/pieropr/Mask_RCNN_TF2_Linux/samples')
 
 # verify the path using getcwd()
 cwd = os.getcwd()

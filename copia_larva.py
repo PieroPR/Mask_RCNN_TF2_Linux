@@ -11,7 +11,7 @@ import random
 
 
 #--------------------------------------------------------------------
-ROOT_DIR = '/home/pieropr/Mask_RCNN_TF2'
+ROOT_DIR = '/home/pieropr/Mask_RCNN_TF2_Linux'
 #ROOT_DIR = 'C://My Proyects//Mask_RCNN_TF2//Mask_RCNN'
 assert os.path.exists(ROOT_DIR), 'ROOT_DIR does not exist'
 
@@ -177,13 +177,13 @@ class CascoDataset(utils.Dataset):
 
 #--------------------------------------------------------------------
 dataset_train = CascoDataset()
-dataset_train.load_cascos("/home/pieropr/Mask_RCNN_TF2/larvaim", "train")
+dataset_train.load_cascos("/home/pieropr/Mask_RCNN_TF2_Linux/larvaim", "train")
 #dataset_train.load_cascos("C://My Proyects//Mask_RCNN_TF2//Mask_RCNN//larvaim", "train")
 dataset_train.prepare()
 
 # Validation dataset
 dataset_val = CascoDataset()
-dataset_val.load_cascos("/home/pieropr/Mask_RCNN_TF2/larvaim", "val")
+dataset_val.load_cascos("/home/pieropr/Mask_RCNN_TF2_Linux/larvaim", "val")
 #dataset_val.load_cascos("C://My Proyects//Mask_RCNN_TF2//Mask_RCNN//larvaim", "val")
 dataset_val.prepare()
 #--------------------------------------------------------------------
@@ -288,7 +288,7 @@ model.load_weights(model_path, by_name=True)
 
 #--------------------------------------------------------------------
 import skimage
-real_test_dir = '/home/pieropr/Mask_RCNN_TF2/larvaim/val/'
+real_test_dir = '/home/pieropr/Mask_RCNN_TF2_Linux/larvaim/val/'
 #real_test_dir = 'C://My Proyects//Mask_RCNN_TF2//Mask_RCNN//larvaim//val//'
 image_paths = []
 for filename in os.listdir(real_test_dir):
